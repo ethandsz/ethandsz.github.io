@@ -11,6 +11,7 @@
     <div class="container">
       <h1>Ethan Dsouza</h1>
       <nav>
+        <a href="assets/Resume.pdf" target="_blank">Resume</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -25,7 +26,7 @@
         <p>
           My passion for robotics and software began in early childhood. I first discovered programming in the 6th grade,
           writing Python scripts to help with math homework. In high school, I built a self-balancing two-wheeled robot using a LEGO Mindstorms kit.
-          I also enjoy driving, riding motorcycles, and fabrication work!
+          I also enjoy driving, riding motorcycles, and custom fabrication!
         </p>
       </div>
     </div>
@@ -37,32 +38,34 @@
       <h2>Projects</h2>
 
       <div class="project">
-        <h3>Decentralised Drone Swarms!</h3>
-        <img src="assets/images/drone-ros.gif" alt="Drone ROS Demo">
-        <img src="assets/images/drone-swarm-irl.gif" alt="Drone IRL Demo" style="width: 50%;" >
-        <img src="assets/images/drone-swarm-class.gif" alt="Drone IRL class Demo" style="width: 80%;" >
-        <p>
+        <h2>Decentralised Drone Swarms!</h2>
+<p>
           In this project I implemented a complex Laplacian-based controller for a swarm of drones, inspired by a paper I read during my time in an aerial robotics class at UCL.
           The algorithm constructs two graphs: one for accessing the drones' velocities and another for shape control. I then formulated a system of ODEs and
           integrated it using the fourth-order Runge-Kutta method, allowing for mid-flight formation and scale control.
           <br>
-          [Include <a href="LINK_TO_PAPER" target="_blank">link to the paper</a> if available]
+          <a href="https://ieeexplore.ieee.org/document/7287770" target="_blank">Link to the paper I used!</a>
         </p>
-      </div>
+
+        <img src="assets/images/drone-ros.gif" alt="Drone ROS Demo">
+        <img src="assets/images/drone-swarm-class.gif" alt="Drone IRL class Demo" style="width: 100%;" >
+        <img src="assets/images/drone-swarm-irl.gif" alt="Drone IRL Demo" style="width: 50%;" >
+              </div>
 
       <div class="project">
-        <h3>Pick and Place</h3>
-        <img src="assets/images/pcl-viewer.png" alt="PCL Viewer">
-        <img src="assets/images/rviz-viewer-pap.png" alt="Rviz Orientation">
-        <img src="assets/images/pick-and-place.gif" alt="Pick and Place Demo">
-        <p>
+        <h2>Pick and Place</h2>
+          <p>
           There already exists different grasping techniques to pick and place objects, however I thought it would be fun to implement my own! I implemented a custom pipeline to grasp and place square and cross-shaped objects into a box using point cloud data from a depth camera.
           After clustering to find object centers, I applied corner detection for orientation and used a rotation formula for grasp point calculation.
           Shape classification was handled via centroid properties. The entire task was executed using the MoveIt library.
         </p>
-      </div>
+
+        <img src="assets/images/pcl-viewer.png" alt="PCL Viewer">
+        <img src="assets/images/rviz-viewer-pap.png" alt="Rviz Orientation">
+        <img src="assets/images/pick-and-place.gif" alt="Pick and Place Demo">
+              </div>
       <div class="project">
-              <h3>Fabrication Work</h3>
+              <h2>Fabrication Work</h2>
         <p>
           These are just some various projects I've worked on in the past, mostly out of my parents' backyard and garage. From learning to MIG weld to making bash bars for my project car with a tube bender, I’ve always enjoyed building things from the ground up.
         </p>
@@ -72,9 +75,10 @@
               <img src="assets/images/bashbar.jpeg" alt="bashbar">
               <h4>TIG Welded Chopper Exhaust</h4>
               <p>Originally the exhaust on this motorcyle was just facing straight down, I thought it would be cool to have a "wrap" in the exhaust. This project turned out quite hard due to the amount of welding to get the bend right. In the end it worked great and sounded amazing!</p>
-              <img src="assets/images/shadowexhaust-1.jpeg" alt="exhuast" style="width: 50%;"> 
-              <img src="assets/images/shadowexhaust-2.jpeg" alt="exhaust" style="width: 50%;">
-
+              <div class="image-row">
+                <img src="assets/images/shadowexhaust-1.jpeg" alt="exhuast">
+                <img src="assets/images/shadowexhaust-2.jpeg" alt="exhaust">
+              </div>
               <h4>Custom Seat Mounts</h4>
               <p>In order to put my project car on the track the organizers require atleast a 4 point harness. To do this I had to remove the original seats and make custom seat brackets for the car. I MIG welded the brackets to the floor of the car and made a rollcage to mount the harness onto.</p>
               <img src="assets/images/z3-seats.jpeg" alt="seat-mounts">
