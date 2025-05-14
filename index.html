@@ -10,27 +10,48 @@
   <header>
     <h1>Ethan Dsouza</h1>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <section id="hero">
-    <img src="assets/images/profile.jpg" alt="Profile Picture">
+    <img src="assets/images/profile.jpg" alt="Profile Picture" style="max-width: 150px; border-radius: 50%;">
     <h2>Welcome to My Portfolio</h2>
-    <p></p>
+    <p>I’m Ethan, a software and robotics enthusiast.</p>
   </section>
 
-  <section id="projects-preview">
-    <h3>Projects</h3>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm currently completing my MSc in Robotics and AI at UCL.  
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
     <div class="project">
       <img src="assets/images/drone-ros.gif" alt="Drone ROS Demo">
-      <img src="assets/images/drone-swarm-irl.gif" alt="Drone irl Demo">
-      <h4><a href="projects/project1.html">Decentralised Drone Swarms!</a></h4>
-      <p>In this project I implemented a complex based Laplacian for controlling a swarm of drones. This was inspired from a few papers I was reading during my time in an aerial robotics class as part of my MSc at UCL mainly [link to paper]. The algorithm works by first creating two graphs, one for accesing the drones velocities and another for shape control. I then form an ODE to govern the system and integrate it using the fourth order Runge-Kutta scheme. This allowed me to control the formation and scale mid flight!</p>
+      <img src="assets/images/drone-swarm-irl.gif" alt="Drone IRL Demo">
+      <h3>Decentralised Drone Swarms!</h3>
+      <p>
+In this project I implemented a complex based Laplacian for controlling a swarm of drones. This was inspired from a few papers I was reading during my time in an aerial robotics class as part of my MSc at UCL mainly [link to paper]. The algorithm works by first creating two graphs, one for accesing the drones velocities and another for shape control. I then form an ODE to govern the system and integrate it using the fourth order Runge-Kutta scheme. This allowed me to control the formation and scale mid flight!
+        <br>
+        [Include <a href="LINK_TO_PAPER" target="_blank">link to the paper</a> if available]
+      </p>
     </div>
+    <!-- Add more projects here using the same structure -->
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>
+      Reach me at <a href="mailto:ethanzizu10@gmail.com">ethanzizu10@gmail.com</a> or on
+      <a href="https://www.linkedin.com/in/ethan-d-souza-b05065213/" target="_blank">LinkedIn</a>.
+    </p>
   </section>
 
   <footer>
