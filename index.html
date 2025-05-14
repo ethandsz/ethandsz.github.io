@@ -8,57 +8,74 @@
 </head>
 <body>
   <header>
-    <h1>Ethan Dsouza</h1>
-    <nav>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <div class="container">
+      <h1>Ethan Dsouza</h1>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
   <section id="hero">
-    <img src="assets/images/profile.jpg" alt="Profile Picture" style="max-width: 150px; border-radius: 50%;">
-    <h2>Welcome to My Portfolio</h2>
-    <p>My passion for robotics and software dates back to my early childhood, where I first learned about code in the 6th grade and starting developing Python scripts to do my math homework. In my high school robotics class I created a self balancing two wheeled robot with a lego mindstorms kit. I also really enjoy driving, riding motorcycles and fabrication! </p>
+    <div class="container hero-content">
+      <img src="assets/images/profile.jpg" alt="Profile Picture" class="profile-pic">
+      <div class="intro-text">
+        <h2>Welcome to My Portfolio</h2>
+        <p>
+          My passion for robotics and software began in early childhood. I first discovered programming in the 6th grade,
+          writing Python scripts to help with math homework. In high school, I built a self-balancing two-wheeled robot using a LEGO Mindstorms kit.
+          I also enjoy driving, riding motorcycles, and fabrication work!
+        </p>
+      </div>
+    </div>
   </section>
 
-  <section id
   <section id="projects">
-    <h2>Projects</h2>
+    <div class="container">
+      <h2>Projects</h2>
 
-    <div class="project">
-      <img src="assets/images/drone-ros.gif" alt="Drone ROS Demo">
-      <img src="assets/images/drone-swarm-irl.gif" alt="Drone IRL Demo">
-      <h3>Decentralised Drone Swarms!</h3>
-      <p>
-In this project I implemented a complex based Laplacian for controlling a swarm of drones. This was inspired from a few papers I was reading during my time in an aerial robotics class as part of my MSc at UCL mainly [link to paper]. The algorithm works by first creating two graphs, one for accesing the drones velocities and another for shape control. I then form an ODE to govern the system and integrate it using the fourth order Runge-Kutta scheme. This allowed me to control the formation and scale mid flight!
-        <br>
-        [Include <a href="LINK_TO_PAPER" target="_blank">link to the paper</a> if available]
-      </p>
+      <div class="project">
+        <img src="assets/images/drone-ros.gif" alt="Drone ROS Demo">
+        <img src="assets/images/drone-swarm-irl.gif" alt="Drone IRL Demo">
+        <h3>Decentralised Drone Swarms!</h3>
+        <p>
+          In this project I implemented a complex Laplacian-based controller for a swarm of drones, inspired by a paper I read during my time in an aerial robotics class at UCL.
+          The algorithm constructs two graphs: one for accessing the drones' velocities and another for shape control. I then formulated a system of ODEs and
+          integrated it using the fourth-order Runge-Kutta method, allowing for mid-flight formation and scale control.
+          <br>
+          [Include <a href="LINK_TO_PAPER" target="_blank">link to the paper</a> if available]
+        </p>
+      </div>
+
+      <div class="project">
+        <img src="assets/images/pcl-viewer.png" alt="PCL Viewer">
+        <img src="assets/images/rviz-viewer-pap.png" alt="Rviz Orientation">
+        <img src="assets/images/pick-and-place.gif" alt="Pick and Place Demo">
+        <h3>Pick and Place</h3>
+        <p>
+          There already exists different grasping techniques to pick and place objects, however I thought it would be fun to implement my own! I implemented a custom pipeline to grasp and place square and cross-shaped objects into a box using point cloud data from a depth camera.
+          After clustering to find object centers, I applied corner detection for orientation and used a rotation formula for grasp point calculation.
+          Shape classification was handled via centroid properties. The entire task was executed using the MoveIt library.
+        </p>
+      </div>
     </div>
-
-
-    <div class="project">
-      <img src="assets/images/pcl-viewer.png" alt="PCL viewer">
-      <img src="assets/images/rviz-viewer-pap.png" alt="Rviz orientation">
-      <img src="assets/images/pick-and-place.gif" alt="Pick and Place Demo">
-      <h3>Pick and Place</h3>
-      <p>
-        There already exists different grasping techniques to pick and place objects, however I thought it would be fun to implement my own! In this project I aimed to grasp and place square and cross objects into a box using various image processing techniques. The process works by clustering pointcloud data from a depth camera to identify the center of objects. I then use a corner detector to determine the orientation of the objects in space. The grasping point calculation was done by using a rotation about a 2d point formula. Shape classification was a bit simpler since the squares wouldn't have any points in the centroid. Finally, the pick and place task was done using the Moveit library! 
-      </p>
-    </div>
-    <!-- Add more projects here using the same structure -->
   </section>
 
   <section id="contact">
-    <h2>Contact</h2>
-    <p>
-      Reach me at <a href="mailto:ethanzizu10@gmail.com">ethanzizu10@gmail.com</a> or on
-      <a href="https://www.linkedin.com/in/ethan-d-souza-b05065213/" target="_blank">LinkedIn</a>.
-    </p>
+    <div class="container">
+      <h2>Contact</h2>
+      <p>
+        Reach me at <a href="mailto:ethanzizu10@gmail.com">ethanzizu10@gmail.com</a> or connect on
+        <a href="https://www.linkedin.com/in/ethan-d-souza-b05065213/" target="_blank">LinkedIn</a>.
+      </p>
+    </div>
   </section>
 
   <footer>
-    <p>© 2025 Ethan Dsouza</p>
+    <div class="container">
+      <p>© 2025 Ethan Dsouza</p>
+    </div>
   </footer>
 </body>
 </html>
