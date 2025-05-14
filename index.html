@@ -10,8 +10,6 @@
   <header>
     <h1>Ethan Dsouza</h1>
     <nav>
-      <a href="#hero">Home</a>
-      <a href="#about">About</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -20,16 +18,10 @@
   <section id="hero">
     <img src="assets/images/profile.jpg" alt="Profile Picture" style="max-width: 150px; border-radius: 50%;">
     <h2>Welcome to My Portfolio</h2>
-    <p>I’m Ethan, a software and robotics enthusiast.</p>
+    <p>My passion for robotics and software dates back to my early childhood, where I first learned about code in the 6th grade and starting developing Python scripts to do my math homework. In my high school robotics class I created a self balancing two wheeled robot with a lego mindstorms kit. I also really enjoy driving, riding motorcycles and fabrication! </p>
   </section>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I'm currently completing my MSc in Robotics and AI at UCL.  
-    </p>
-  </section>
-
+  <section id
   <section id="projects">
     <h2>Projects</h2>
 
@@ -41,6 +33,17 @@
 In this project I implemented a complex based Laplacian for controlling a swarm of drones. This was inspired from a few papers I was reading during my time in an aerial robotics class as part of my MSc at UCL mainly [link to paper]. The algorithm works by first creating two graphs, one for accesing the drones velocities and another for shape control. I then form an ODE to govern the system and integrate it using the fourth order Runge-Kutta scheme. This allowed me to control the formation and scale mid flight!
         <br>
         [Include <a href="LINK_TO_PAPER" target="_blank">link to the paper</a> if available]
+      </p>
+    </div>
+
+
+    <div class="project">
+      <img src="assets/images/pcl-viewer.png" alt="PCL viewer">
+      <img src="assets/images/rviz-viewer-pap.png" alt="Rviz orientation">
+      <img src="assets/images/pick-and-place.gif" alt="Pick and Place Demo">
+      <h3>Pick and Place</h3>
+      <p>
+        There already exists different grasping techniques to pick and place objects, however I thought it would be fun to implement my own! In this project I aimed to grasp and place square and cross objects into a box using various image processing techniques. The process works by clustering pointcloud data from a depth camera to identify the center of objects. I then use a corner detector to determine the orientation of the objects in space. The grasping point calculation was done by using a rotation about a 2d point formula. Shape classification was a bit simpler since the squares wouldn't have any points in the centroid. Finally, the pick and place task was done using the Moveit library! 
       </p>
     </div>
     <!-- Add more projects here using the same structure -->
