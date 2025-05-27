@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Ethan Dsouza | Portfolio</title>
+  <title>Ethan D'Souza | Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
   <header>
     <div class="container">
-      <h1>Ethan Dsouza</h1>
+      <h1>Ethan D'Souza</h1>
       <nav>
         <a href="assets/Resume.pdf" target="_blank">Resume</a>
         <a href="#projects">Projects</a>
@@ -17,80 +17,84 @@
       </nav>
     </div>
   </header>
-<section id="hero">
-  <div class="container hero-content">
-    <div class="profile-info">
-      <img src="assets/images/profile.jpg" alt="Profile Picture" class="profile-pic">
-      <div class="intro-text">
-        <h2>Welcome to My Portfolio</h2>
-        <p>
-My passion for robotics and software began in early childhood. I first discovered programming in the 6th grade, writing Python scripts to do my math homework. In my high school robotics class, I built a self-balancing two-wheeled robot using a LEGO Mindstorms kit. More recently, I've been exploring aerial and underwater robotics—working with drones and the BlueROV2 UUV to tackle navigation, control, and autonomy in dynamic environments. I also enjoy driving, riding motorcycles, and custom fabrication! I am currently looking for role as a robotics engineer.
-        </p>
+
+  <section id="hero">
+    <div class="container hero-content">
+      <div class="profile-info">
+        <img src="assets/images/profile.jpg" alt="Profile Picture" class="profile-pic">
+        <div class="intro-text">
+          <h2>Welcome to My Portfolio</h2>
+          <p>
+            My passion for robotics and software began in early childhood. I first discovered programming in the 6th grade, writing Python scripts to do my math homework. In my high school robotics class, I built a self-balancing two-wheeled robot using a LEGO Mindstorms kit. More recently, I've been exploring aerial and underwater robotics—working with drones and the BlueROV2 UUV to tackle navigation, control, and autonomy in dynamic environments. I also enjoy driving, riding motorcycles, and custom fabrication! I am currently looking for a role as a robotics engineer.
+          </p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <section id="projects">
     <div class="container">
       <h2>Projects</h2>
 
       <div class="project">
-        <h2>Decentralised Drone Swarms!</h2>
-<p>
-          In this project I implemented a complex Laplacian-based controller for a swarm of drones, inspired by a paper I read during my time in an aerial robotics class at UCL.
-          The algorithm constructs two graphs: one for accessing the drones' velocities and another for shape control. I then formulated a system of ODEs and
-          integrated it using the fourth-order Runge-Kutta method, allowing for mid-flight formation and scale control.
+        <h2>Decentralized Drone Swarms</h2>
+        <p>
+          In this project, I implemented a complex Laplacian-based controller for a swarm of drones, inspired by a paper I read during my aerial robotics class at UCL. The algorithm constructs two graphs: one for accessing the drones' velocities and another for shape control. I then formulated a system of ODEs and integrated it using the fourth-order Runge-Kutta method, allowing for mid-flight formation and scale control.
           <br>
-          <a href="https://ieeexplore.ieee.org/document/7287770" target="_blank">Link to the paper I used!</a>
+          <a href="https://ieeexplore.ieee.org/document/7287770" target="_blank">Link to the paper I used</a>
         </p>
 
         <img src="assets/images/drone-ros.gif" alt="Drone ROS Demo">
-        <img src="assets/images/drone-swarm-class.gif" alt="Drone IRL class Demo" style="width: 100%;" >
-        <img src="assets/images/drone-swarm-irl.gif" alt="Drone IRL Demo" style="width: 50%;" >
-              </div>
+        <img src="assets/images/drone-swarm-class.gif" alt="Drone IRL Class Demo" style="width: 100%;">
+        <img src="assets/images/drone-swarm-irl.gif" alt="Drone IRL Demo" style="width: 50%;">
+      </div>
 
       <div class="project">
         <h2>Pick and Place</h2>
-          <p>
-          I implemented a custom pipeline to grasp and place square and cross-shaped objects into a box using point cloud data from a depth camera.
-          After clustering to find object centers, I applied corner detection for orientation and used a rotation formula for grasp point calculation.
-          Shape classification was handled via centroid properties. The entire task was executed using the MoveIt library.
+        <p>
+          I implemented a custom pipeline to grasp and place square and cross-shaped objects into a box using point cloud data from a depth camera. After clustering to find object centers, I applied corner detection for orientation and used a rotation formula for grasp point calculation. Shape classification was handled via centroid properties. The entire task was executed using the MoveIt library.
         </p>
 
         <img src="assets/images/pcl-viewer.png" alt="PCL Viewer">
-        <img src="assets/images/rviz-viewer-pap.png" alt="Rviz Orientation">
+        <img src="assets/images/rviz-viewer-pap.png" alt="RViz Orientation">
         <img src="assets/images/pick-and-place.gif" alt="Pick and Place Demo">
       </div>
 
       <div class="project">
-              <h2>Cartpole MPC</h2>
-                <p>
-                In this project I used Model Predictive Control (MPC) for the CartPole environment using OpenAI's Gymnasium. The objective is to keep the pole balanced on the cart without it tipping over.
-              </p>
-              <img src="assets/images/cartpole.gif" alt="CartPole demo">
+        <h2>CartPole MPC</h2>
+        <p>
+          In this project, I used Model Predictive Control (MPC) for the CartPole environment using OpenAI's Gymnasium. The objective was to keep the pole balanced on the cart without it tipping over.
+        </p>
+        <img src="assets/images/cartpole.gif" alt="CartPole Demo">
       </div>
 
       <div class="project">
-              <h2>Fabrication Work</h2>
+        <h2>Fabrication Work</h2>
         <p>
-          These are just some various projects I've worked on in the past, mostly out of my parents' backyard and garage. From learning to MIG weld to making bash bars for my project car with a tube bender, I’ve always enjoyed building things from the ground up.
+          These are various projects I've worked on in the past, mostly out of my parents' backyard and garage. From learning to MIG weld to making bash bars for my project car with a tube bender, I’ve always enjoyed building things from the ground up.
         </p>
-              <h4>TIG Welded Bashbar</h4>
-              <p>I made this bashbar for my project car since the bumper was damaged. The car was a trackcar so it could easily be towed from the rear since it would be directly mounted to the frame.</p>
-              <img src="assets/images/bashbar.jpeg" alt="bashbar">
 
-              <h4>Custom Seat Mounts</h4>
-              <p>In order to put my project car on the track the organizers require atleast a 4 point harness. To do this I had to remove the original seats and make custom seat brackets for the car. I MIG welded the brackets to the floor of the car and made a rollcage to mount the harness onto.</p>
-              <img src="assets/images/z3-seats.jpeg" alt="seat-mounts">
+        <h4>TIG-Welded Bash Bar</h4>
+        <p>
+          I made this bash bar for my project car since the bumper was damaged. The car was a track car, so it needed to be towable from the rear by mounting the bar directly to the frame.
+        </p>
+        <img src="assets/images/bashbar.jpeg" alt="Bash Bar">
 
-              <h4>TIG Welded Chopper Exhaust</h4>
-              <p>I fabricated a pass throgh exhaust system for a Honda Shadow. This project turned out quite hard due to the amount of welding to get the bend right. In the end it worked great and sounded amazing!</p>
-              <div class="image-row">
-                <img src="assets/images/shadowexhaust-1.jpeg" alt="exhuast">
-                <img src="assets/images/shadowexhaust-2.jpeg" alt="exhaust">
-              </div>
-          </div>
+        <h4>Custom Seat Mounts</h4>
+        <p>
+          In order to take my project car on the track, the organizers required at least a 4-point harness. To do this, I had to remove the original seats and fabricate custom seat brackets. I MIG welded the brackets to the car’s floor and installed a roll cage to mount the harness.
+        </p>
+        <img src="assets/images/z3-seats.jpeg" alt="Seat Mounts">
+
+        <h4>TIG-Welded Chopper Exhaust</h4>
+        <p>
+          I fabricated a pass-through exhaust system for a Honda Shadow. This project was particularly challenging due to the amount of welding required for the bends. In the end, it worked great and sounded amazing!
+        </p>
+        <div class="image-row">
+          <img src="assets/images/shadowexhaust-1.jpeg" alt="Exhaust 1">
+          <img src="assets/images/shadowexhaust-2.jpeg" alt="Exhaust 2">
+        </div>
+      </div>
     </div>
   </section>
 
@@ -105,7 +109,7 @@ My passion for robotics and software began in early childhood. I first discovere
 
   <footer>
     <div class="container">
-      <p>© 2025 Ethan Dsouza</p>
+      <p>© 2025 Ethan D'Souza</p>
     </div>
   </footer>
 </body>
