@@ -45,7 +45,10 @@
 
         <img src="assets/images/drone-ros.gif" alt="Drone ROS Demo">
         <img src="assets/images/drone-swarm-class.gif" alt="Drone IRL Class Demo" style="width: 100%;">
+
+        <div style="text-align: center;">
         <img src="assets/images/drone-swarm-irl.gif" alt="Drone IRL Demo" style="width: 50%;">
+        </div>
       </div>
       <div id="UUV" class="project">
         <h2>UUV River Monitoring</h2>
@@ -54,6 +57,15 @@ As part of my dissertation at UCL, I chose to focus on tackling river pollution.
         </p>
         <img src="assets/images/UUV-Gazebo.gif" alt="UUV Gazebo">
         <img src="assets/images/Pollution.gif" alt="Pollution simulation">
+      </div>
+      <div class="project">
+        <h2>Unitree Go2 Path Tracking</h2>
+        <p>
+In this project, I worked in a group to enable a Unitree Go2 robot to follow predefined trajectories. I began with state estimation, specifically estimating roll, pitch, and yaw using data from the onboard IMU. To achieve this, I implemented a Kalman filter to fuse sensor data and estimate the robot’s orientation. One of the main challenges was yaw estimation, which is typically derived from a magnetometer, GPS, or visual input. However, as part of the challenge, we were not allowed to use any of these sensors. As a workaround, we assumed a constant yaw throughout each run. Given that the robot was operating on flat ground, executing relatively short trajectories, and had reliable odometry, this assumption was reasonable and allowed us to proceed. After establishing orientation estimates, we implemented a Model Predictive Controller (MPC) based on a unicycle model to track the given trajectories. We tested several paths, with the most complex being a figure-eight trajectory.
+        </p>
+        <div style="text-align: center;">
+          <img src="assets/images/go2.gif" alt="go2 trajectory" style="width: 50%;">
+        </div>
       </div>
       <div class="project">
         <h2>Pick and Place</h2>
