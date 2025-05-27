@@ -25,7 +25,7 @@
         <div class="intro-text">
           <h2>Welcome to My Portfolio</h2>
           <p>
-            My passion for robotics and software began in early childhood. I first discovered programming in the 6th grade, writing Python scripts to do my math homework. In my high school robotics class, I built a self-balancing two-wheeled robot using a LEGO Mindstorms kit. More recently, I've been exploring aerial and underwater robotics—working with drones and the BlueROV2 UUV to tackle navigation, control, and autonomy in dynamic environments. I also enjoy driving, riding motorcycles, and custom fabrication! I am currently looking for a role as a robotics engineer.
+            My passion for robotics and software began in early childhood. I first discovered programming in the 6th grade, writing Python scripts to do my math homework. In my high school robotics class, I built a self-balancing two-wheeled robot using a LEGO Mindstorms kit. More recently, I've been exploring aerial and underwater robotics—working with drones and the BlueROV2 UUV to tackle navigation, control, and autonomy in dynamic environments. I also enjoy driving, riding motorcycles, and custom fabrication! I'm seeking a role as a robotics engineer, with an interest in autonomous systems, drones, and legged robots.
           </p>
         </div>
       </div>
@@ -35,8 +35,7 @@
   <section id="projects">
     <div class="container">
       <h2>Projects</h2>
-
-      <div class="project">
+      <div id="drone-swarm" class="project">
         <h2>Decentralized Drone Swarms</h2>
         <p>
           In this project, I implemented a complex Laplacian-based controller for a swarm of drones, inspired by a paper I read during my aerial robotics class at UCL. The algorithm constructs two graphs: one for accessing the drones' velocities and another for shape control. I then formulated a system of ODEs and integrated it using the fourth-order Runge-Kutta method, allowing for mid-flight formation and scale control.
@@ -48,7 +47,14 @@
         <img src="assets/images/drone-swarm-class.gif" alt="Drone IRL Class Demo" style="width: 100%;">
         <img src="assets/images/drone-swarm-irl.gif" alt="Drone IRL Demo" style="width: 50%;">
       </div>
-
+      <div id="UUV" class="project">
+        <h2>UUV River Monitoring</h2>
+        <p>
+As part of my dissertation at UCL, I chose to focus on tackling river pollution. Having lived on the coast for most of my life, I understood and saw first hand how significant an environmental issue this is. We secured a grant to purchase a BlueROV2 underwater drone. I began by implementing a Model Predictive Controller (MPC) to follow trajectories in simulation. Next, I developed a simulation to model how a pollutant from a constant source flows downstream, using FiPy, a PDE solver in Python. This simulation captured the advection and diffusion processes of the pollutant. By applying a reverse-time model, we can identify pollutant particles downstream and trace them back to the pollution source, generating a trajectory for the UUV to follow.
+        </p>
+        <img src="assets/images/UUV-Gazebo.gif" alt="UUV Gazebo">
+        <img src="assets/images/Pollution.gif" alt="Pollution simulation">
+      </div>
       <div class="project">
         <h2>Pick and Place</h2>
         <p>
