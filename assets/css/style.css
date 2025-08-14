@@ -597,8 +597,9 @@ nav a[href*="Resume"]:hover {
   transform: translateY(-2px);
 }
 
-/* Project Images */
-.project img {
+/* Project Images and Videos */
+.project img,
+.project video {
   width: 100%;
   height: auto;
   border-radius: var(--radius-md);
@@ -606,6 +607,11 @@ nav a[href*="Resume"]:hover {
   box-shadow: var(--shadow-sm);
   transition: all var(--transition-base);
   border: 1px solid var(--color-border);
+}
+
+.project video {
+  display: block;
+  background: var(--color-bg-secondary);
 }
 
 .project img:hover {

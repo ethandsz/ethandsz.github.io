@@ -160,15 +160,36 @@ function initializeScrollAnimations() {
 // ===================================================================
 
 function initializeImageModal() {
-    // Add click handlers to project images
-    const projectImages = document.querySelectorAll('.project img');
+    // Add click handlers to project images (but not videos)
+    const projectImages = document.querySelectorAll('.project img:not(video img)');
     
     projectImages.forEach(img => {
+        // Skip images that are fallbacks inside video tags
+        if (img.parentElement.tagName === 'VIDEO') return;
+        
         img.style.cursor = 'zoom-in';
         img.addEventListener('click', () => {
             createImageModal(img.src, img.alt);
         });
     });
+    
+    // Lazy load videos when they come into view
+    const videos = document.querySelectorAll('video[loading="lazy"]');
+    if ('IntersectionObserver' in window) {
+        const videoObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const video = entry.target;
+                    video.load();
+                    videoObserver.unobserve(video);
+                }
+            });
+        }, { rootMargin: '100px' });
+        
+        videos.forEach(video => {
+            videoObserver.observe(video);
+        });
+    }
 }
 
 function createImageModal(src, alt) {
