@@ -49,12 +49,12 @@
         <div class="about-content">
           <h3>Engineering the Future of Robotics</h3>
           <p>
-            From orchestrating decentralized drone swarms using Laplacian control theory to developing environmental monitoring solutions with underwater vehicles that secured grant funding, I enjoy turning theoretical concepts into real-world solutions.
+            From developing decentralized drone swarms using Laplacian control theory to developing environmental monitoring solutions with underwater vehicles that secured grant funding, I enjoy turning theoretical concepts into real-world solutions.
           </p>
           
           <h3>Experience</h3>
           <p>
-            Implemented Model Predictive Controllers and Quadratic Programs for trajectory optimization, developing custom computer vision pipelines for robotic manipulation, and building sensor fusion algorithms for state estimation in GPS-denied environments. I combine love to combine my technical side with hands-on fabrication skills, enabling me to prototype and iterate from concept to deployment.
+            Implemented Model Predictive Controllers and Quadratic Programs for trajectory optimization, developing custom computer vision pipelines for robotic manipulation, and building sensor fusion algorithms for state estimation in GPS-denied environments. I love to combine my technical side with hands-on fabrication skills, enabling me to prototype and iterate from concept to deployment.
           </p>
         </div>
       </div>
@@ -148,7 +148,7 @@
           <strong>Impact:</strong> Successfully demonstrated scalable swarm intelligence with mid-flight formation changes and dynamic scale control. System proved robust across simulated and real-world deployments, advancing the state-of-the-art in decentralized aerial robotics.
         </p>
         <p>
-          <strong>Technologies:</strong> ROS/Gazebo • Python • C++ • Graph Theory • Distributed Control • Numerical Methods
+          <strong>Technologies:</strong> ROS/Gazebo • Python • C++ • Distributed Control • Numerical Methods for Solving ODEs
           <br>
           <a href="https://ieeexplore.ieee.org/document/7287770" target="_blank">Based on IEEE research</a>
         </p>
@@ -172,25 +172,22 @@
       <div id="UUV" class="project">
         <h2>Autonomous UUV Environmental Monitoring | Grant-Funded Research</h2>
         <p>
-          <strong>Challenge:</strong> Develop an autonomous solution for identifying and tracking river pollution sources - a critical environmental challenge affecting coastal ecosystems worldwide.
+          <strong>Challenge:</strong> Build an autonomous system to identify and track river pollution sources that impact coastal ecosystems.
         </p>
         <p>
-          <strong>Solution:</strong> Led the technical development of an innovative underwater monitoring system that secured competitive grant funding. Engineered a Model Predictive Controller achieving sub-meter trajectory tracking accuracy for the BlueROV2 platform. Developed sophisticated pollution modeling software using FiPy PDE solver to simulate advection-diffusion dynamics, enabling reverse-time particle tracking to identify contamination sources. Created an integrated system that generates optimal UUV trajectories for autonomous pollution source identification.
+          <strong>Solution:</strong> Led development of a BlueROV2-based monitoring stack that won competitive grant funding. Implemented a quadratic program with sub-meter trajectory tracking. Built FiPy advection–diffusion modeling plus an inverse Physics-Informed Neural Network (PINN) to infer diffusivity, flow field, and source parameters from sparse samples. Implemented a novel residual map hotspot tracking from the PINN to drive active sampling and generate optimal UUV trajectories for autonomous source identification
         </p>
         <p>
-          <strong>Impact:</strong> Delivered a scalable solution for environmental monitoring that reduces pollution source identification time by 70% compared to traditional sampling methods. Research contributed to UCL's environmental robotics initiatives and demonstrated practical applications of advanced control theory in real-world conservation efforts.
+          <strong>Impact:</strong> Delivered a solution for environmental monitoring that reduces pollution source identification time compared to traditional sampling methods. Research contributed to UCL's environmental robotics initiatives and demonstrated practical applications of advanced control theory in real-world conservation efforts.
         </p>
         <p>
-          <strong>Technologies:</strong> Model Predictive Control • BlueROV2 • ArduSub • Computational Fluid Dynamics • FiPy PDE Solver • Python Scientific Computing • Gazebo Simulation
+          <strong>Technologies:</strong> Convex Optimization • BlueROV2 • ArduSub • Fluid Dynamics • FiPy PDE Solver • Gazebo Simulation • CVXPY
         </p>
         <video autoplay loop muted playsinline loading="lazy" style="width: 100%; border-radius: 8px; margin-bottom: 1rem;">
           <source src="assets/images/UUV-Gazebo.mp4" type="video/mp4">
           <img src="assets/images/UUV-Gazebo.gif" alt="UUV Gazebo" loading="lazy">
         </video>
-        <video autoplay loop muted playsinline loading="lazy" style="width: 100%; border-radius: 8px;">
-          <source src="assets/images/Pollution.mp4" type="video/mp4">
-          <img src="assets/images/Pollution.gif" alt="Pollution simulation" loading="lazy">
-        </video>
+        <img src="assets/images/qp_path_on_residual.png" alt="Hotsopt Tracking PINN" loading="lazy" style="width: 100%; border-radius: 8px; margin-bottom: 1rem;">
       </div>
       <div class="project">
         <h2>Quadruped Robot Navigation | Advanced State Estimation in GPS-Denied Environments</h2>
@@ -204,7 +201,7 @@
           <strong>Impact:</strong> Demonstrated that sophisticated navigation is achievable even with limited sensor suites, providing a cost-effective solution for indoor robotics applications. The system successfully executed complex trajectories that pushed the boundaries of what's possible without traditional localization methods.
         </p>
         <p>
-          <strong>Technologies:</strong> Kalman Filtering • Sensor Fusion • Model Predictive Control • ROS2 • Python • C++ • Unitree SDK • Real-time Control Systems
+          <strong>Technologies:</strong> Kalman Filtering • Sensor Fusion • Model Predictive Control • ROS2 • Python • C++ 
         </p>
         <div style="text-align: center;">
           <video autoplay loop muted playsinline loading="lazy" style="width: 50%; border-radius: 8px;">
@@ -225,7 +222,7 @@
           <strong>Impact:</strong> Delivered a production-ready system that reduced pick-and-place cycle time by 40% compared to traditional approaches. The modular architecture enables easy adaptation to new object types and has applications in warehouse automation and manufacturing.
         </p>
         <p>
-          <strong>Technologies:</strong> Point Cloud Library (PCL) • MoveIt • Computer Vision • 3D Perception • ROS • Motion Planning • Real-time Processing
+          <strong>Technologies:</strong> Point Cloud Library (PCL) • MoveIt • Computer Vision • 3D Perception • ROS • Motion Planning 
         </p>
 
         <img src="assets/images/pcl-viewer.png" alt="PCL Viewer" loading="lazy" style="width: 100%; border-radius: 8px; margin-bottom: 1rem;">
@@ -248,7 +245,7 @@
           <strong>Impact:</strong> Validated advanced control techniques applicable to real-world unstable systems including self-balancing robots, rocket landing systems, and drone stabilization.
         </p>
         <p>
-          <strong>Technologies:</strong> Model Predictive Control • Convex Optimization • Python • OpenAI Gymnasium • Control Theory
+          <strong>Technologies:</strong> Model Predictive Control • Convex Optimization • Python • OpenAI Gymnasium 
         </p>
         <img src="assets/images/cartpole.gif" alt="CartPole Demo" loading="lazy" style="width: 100%; border-radius: 8px;">
       </div>
