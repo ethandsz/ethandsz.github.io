@@ -142,10 +142,10 @@
           <strong>Challenge:</strong> Enable real-time coordination of multiple autonomous drones without centralized control, maintaining formation integrity while executing complex maneuvers.
         </p>
         <p>
-          <strong>Solution:</strong> Architected and implemented a sophisticated Laplacian-based distributed control system that achieved seamless multi-agent coordination. Developed dual-graph architecture for velocity consensus and shape control, enabling the swarm to maintain formation while adapting to dynamic environments. Implemented fourth-order Runge-Kutta integration for solving complex systems of ODEs, ensuring numerical stability and precision in real-time control.
+          <strong>Solution:</strong> Architected and implemented a sophisticated Laplacian-based distributed control system that achieved seamless multi-agent coordination even in dynamic environments. Implemented fourth-order Runge-Kutta integration for solving complex systems of ODEs, ensuring numerical stability and precision in real-time control.
         </p>
         <p>
-          <strong>Impact:</strong> Successfully demonstrated scalable swarm intelligence with mid-flight formation changes and dynamic scale control. System proved robust across simulated and real-world deployments, advancing the state-of-the-art in decentralized aerial robotics.
+          <strong>Impact:</strong> Successfully demonstrated scalable swarm intelligence with mid-flight formation changes and dynamic scale control. System proved robust across simulated and real-world deployments.
         </p>
         <p>
           <strong>Technologies:</strong> ROS/Gazebo • Python • C++ • Distributed Control • Numerical Methods for Solving ODEs
@@ -195,10 +195,10 @@
           <strong>Challenge:</strong> Enable precise autonomous navigation for the Unitree Go2 quadruped robot without access to GPS, magnetometer, or visual odometry - simulating real-world scenarios in underground or indoor environments.
         </p>
         <p>
-          <strong>Solution:</strong> Architected a robust state estimation pipeline using Kalman filtering to fuse IMU sensor data for accurate roll, pitch, and yaw estimation. Overcame the critical challenge of yaw drift in GPS-denied environments by developing an innovative constant-yaw assumption algorithm validated through extensive odometry analysis. Implemented a Model Predictive Controller based on unicycle dynamics, achieving trajectory tracking with less than 10cm deviation on complex paths including figure-eight patterns.
+          <strong>Solution:</strong> Architected a robust state estimation pipeline using Kalman filtering to fuse IMU sensor data for accurate roll, pitch, and yaw estimation. Overcame the critical challenge of yaw drift in GPS-denied environments by developing an innovative constant-yaw assumption algorithm validated through extensive odometry analysis. Implemented a Model Predictive Controller based on unicycle dynamics, achieving trajectory tracking on complex paths including figure-eight patterns.
         </p>
         <p>
-          <strong>Impact:</strong> Demonstrated that sophisticated navigation is achievable even with limited sensor suites, providing a cost-effective solution for indoor robotics applications. The system successfully executed complex trajectories that pushed the boundaries of what's possible without traditional localization methods.
+          <strong>Impact:</strong> Demonstrated that sophisticated navigation is achievable even with limited sensor suites, providing a cost-effective solution for indoor robotics applications. The system successfully executed complex trajectories. 
         </p>
         <p>
           <strong>Technologies:</strong> Kalman Filtering • Sensor Fusion • Model Predictive Control • ROS2 • Python • C++ 
@@ -213,13 +213,13 @@
       <div class="project">
         <h2>Intelligent Robotic Manipulation | Custom Computer Vision Pipeline</h2>
         <p>
-          <strong>Challenge:</strong> Develop a robust manipulation system capable of identifying, classifying, and precisely grasping objects of varying shapes using only 3D vision data.
+          <strong>Challenge:</strong> Develop a robust manipulation system capable of identifying, classifying, and precisely grasping objects of varying shapes using only 3D vision data via a Realsense depth camera.
         </p>
         <p>
-          <strong>Solution:</strong> Engineered an end-to-end computer vision and manipulation pipeline processing 30+ point clouds per second. Implemented advanced clustering algorithms for object segmentation, custom corner detection for precise orientation estimation, and developed a novel grasp point calculation algorithm achieving 95% success rate. Created shape classification system using geometric moment analysis for real-time object identification.
+          <strong>Solution:</strong> Engineered an end-to-end computer vision and manipulation pipeline processing point clouds. Implemented advanced clustering algorithms for object segmentation, custom corner detection for precise orientation estimation, and developed a novel grasp point calculation algorithm achieving 85% success rate in trials. Created shape classification system using geometric moment analysis for real-time object identification.
         </p>
         <p>
-          <strong>Impact:</strong> Delivered a production-ready system that reduced pick-and-place cycle time by 40% compared to traditional approaches. The modular architecture enables easy adaptation to new object types and has applications in warehouse automation and manufacturing.
+          <strong>Impact:</strong> Delivered a production-ready system, the modular architecture enables easy adaptation to new object types.
         </p>
         <p>
           <strong>Technologies:</strong> Point Cloud Library (PCL) • MoveIt • Computer Vision • 3D Perception • ROS • Motion Planning 
@@ -239,7 +239,7 @@
           <strong>Challenge:</strong> Implement sophisticated control algorithms for inherently unstable systems, demonstrating mastery of modern control theory.
         </p>
         <p>
-          <strong>Solution:</strong> Developed a Model Predictive Controller from scratch for the classic inverted pendulum problem, achieving 5x longer balancing duration than traditional PID controllers. Implemented real-time optimization solving 100+ constraint equations per control cycle, demonstrating deep understanding of convex optimization and control theory fundamentals.
+          <strong>Solution:</strong> Developed a Model Predictive Controller from scratch for the classic inverted pendulum problem. Implemented real-time optimization solving constraint equations per control cycle, demonstrating understanding of convex optimization and control theory fundamentals.
         </p>
         <p>
           <strong>Impact:</strong> Validated advanced control techniques applicable to real-world unstable systems including self-balancing robots, rocket landing systems, and drone stabilization.
@@ -253,30 +253,27 @@
       <div class="project">
         <h2>Advanced Fabrication & Rapid Prototyping | End-to-End Product Development</h2>
         <p>
-          <strong>Core Capability:</strong> Hands-on engineering expertise spanning the complete product lifecycle from CAD design through precision fabrication, enabling rapid iteration and field testing of robotic systems.
+          <strong>Core Capability:</strong> Hands-on engineering expertise from CAD design through precision fabrication.
         </p>
         <p>
-          <strong>Technical Proficiency:</strong> Master-level welding (TIG/MIG) • CNC machining • 3D printing • Structural analysis • Materials science application. This unique combination of software and hardware skills accelerates development cycles by 50%, allowing same-day prototype iterations that would typically require weeks of outsourcing.
-        </p>
-        <p>
-          <strong>Impact:</strong> The ability to physically build and modify robotic platforms provides crucial insights into mechanical constraints, material properties, and real-world failure modes - knowledge that directly informs better software design and control algorithms. This holistic engineering approach has been instrumental in achieving first-time success rates above 80% in field deployments.
+          <strong>Impact:</strong> The ability to physically build and modify robotic platforms provides crucial insights into mechanical constraints, material properties, and real-world failure modes - knowledge that directly informs better software design and control algorithms.
         </p>
 
         <h4>Structural Safety Systems | Track-Grade Engineering</h4>
         <p>
-          Designed and fabricated competition-spec safety equipment meeting rigorous track standards. Engineered frame-mounted towing system with calculated load distribution, ensuring structural integrity under 2,000+ lb dynamic loads. TIG welding precision achieved 100% penetration on critical joints.
+          Designed and fabricated competition-spec safety equipment meeting track standards. Engineered frame-mounted towing system with load distribution, ensuring structural integrity under loads. 
         </p>
         <img src="assets/images/bashbar.jpeg" alt="Bash Bar" loading="lazy" style="width: 100%; border-radius: 8px;">
 
         <h4>Safety-Critical Mounting Systems | Competition Compliance</h4>
         <p>
-          Engineered custom mounting solutions exceeding motorsport safety regulations. Designed and fabricated reinforced brackets supporting 6G forces, integrated with roll cage architecture for harness mounting. Achieved certification for competition use through precise MIG welding and structural analysis.
+          Engineered custom mounting solutions exceeding motorsport safety regulations. Designed and fabricated brackets, integrated with roll cage architecture for harness mounting. Achieved certification for competition at a local raceway.
         </p>
         <img src="assets/images/z3-seats.jpeg" alt="Seat Mounts" loading="lazy" style="width: 100%; border-radius: 8px;">
 
         <h4>Complex Geometry Fabrication | Precision Flow Dynamics</h4>
         <p>
-          Engineered custom exhaust system requiring 40+ precision TIG welds on compound curves. Applied fluid dynamics principles to optimize flow characteristics while achieving desired acoustic properties. Demonstrated mastery of thin-wall welding techniques on heat-sensitive materials.
+          Engineered custom exhaust system requiring precision TIG welds on curves. Demonstrated ability of thin-wall welding techniques on heat-sensitive materials.
         </p>
         <div class="image-row">
           <img src="assets/images/shadowexhaust-1.jpeg" alt="Exhaust 1" loading="lazy" style="border-radius: 8px;">
