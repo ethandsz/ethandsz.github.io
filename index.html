@@ -40,8 +40,6 @@
           <img src="assets/images/profile.jpg" alt="Ethan D'Souza" class="profile-pic">
           <div class="profile-details">
             <p><strong>Location:</strong> New Jersey</p>
-            <p><strong>Focus:</strong> Autonomous Systems</p>
-            <!--<p><strong>Experience:</strong> 5+ Years</p>-->
           </div>
         </div>
 
@@ -62,7 +60,7 @@ From developing decentralized drone swarms using Laplacian control theory to bui
             <h4>Control Systems</h4>
             <ul>
               <li>Model Predictive Control</li>
-              <li>PID Controllers</li>
+              <li>PID Control</li>
               <li>Laplacian Control Theory</li>
               <li>Trajectory Optimization</li>
             </ul>
@@ -99,7 +97,6 @@ From developing decentralized drone swarms using Laplacian control theory to bui
             <ul>
               <li>Kalman Filtering</li>
               <li>Sensor Fusion</li>
-              <li>IMU Processing</li>
               <li>Odometry</li>
             </ul>
           </div>
@@ -108,7 +105,6 @@ From developing decentralized drone swarms using Laplacian control theory to bui
             <ul>
               <li>CAD Design</li>
               <li>3D Printing</li>
-              <li>CNC Machining</li>
               <li>Welding (TIG/MIG)</li>
             </ul>
           </div>
@@ -178,13 +174,13 @@ From developing decentralized drone swarms using Laplacian control theory to bui
           <span>Real-time Coordination</span>
         </div>
         <p>
-          <strong>Challenge:</strong> Enable real-time coordination of multiple autonomous drones without centralized control, maintaining formation integrity while executing complex maneuvers.
+          <strong>Challenge:</strong> Enable real-time coordination of multiple autonomous drones without centralized control, maintaining formation integrity while executing complex trajectories.
         </p>
         <p>
-          <strong>Solution:</strong> Architected and implemented a sophisticated Laplacian-based distributed control system that achieved seamless multi-agent coordination even in dynamic environments. Implemented fourth-order Runge-Kutta integration for solving complex systems of ODEs, ensuring numerical stability and precision in real-time control.
+          <strong>Solution:</strong> Implemented a Laplacian-based distributed control system that achieved multi-agent coordination dynamic environments. Implemented fourth-order Runge-Kutta integration for solving complex systems of ODEs, ensuring numerical stability in real-time control.
         </p>
         <p>
-          <strong>Impact:</strong> Successfully demonstrated scalable swarm intelligence with mid-flight formation changes and dynamic scale control. System proved robust across simulated and real-world deployments.
+          <strong>Impact:</strong> Successfully demonstrated a scalable swarm intelligence solution with mid-flight formation changes and dynamic scale control. 
         </p>
         <p>
           <strong>Technologies:</strong> ROS/Gazebo • Python • C++ • Distributed Control • Numerical Methods for Solving ODEs
@@ -211,13 +207,10 @@ From developing decentralized drone swarms using Laplacian control theory to bui
       <div id="UUV" class="project">
         <h2>Autonomous UUV Environmental Monitoring | Grant-Funded Research</h2>
         <p>
-          <strong>Challenge:</strong> Build an autonomous system to identify and track river pollution sources that impact coastal ecosystems.
+          <strong>Challenge:</strong> Build an autonomous system to identify and track river pollution sources that impact ecosystems.
         </p>
         <p>
-          <strong>Solution:</strong> Led development of a BlueROV2-based monitoring stack that won competitive grant funding. Implemented a quadratic program with sub-meter trajectory tracking. Built FiPy advection–diffusion modeling plus an inverse Physics-Informed Neural Network (PINN) to infer diffusivity, flow field, and source parameters from sparse samples. Implemented a novel residual map hotspot tracking from the PINN to drive active sampling and generate optimal UUV trajectories for autonomous source identification
-        </p>
-        <p>
-          <strong>Impact:</strong> Delivered a solution for environmental monitoring that reduces pollution source identification time compared to traditional sampling methods. Research contributed to UCL's environmental robotics initiatives and demonstrated practical applications of advanced control theory in real-world conservation efforts.
+          <strong>Solution:</strong> Developed a BlueROV2-based monitoring stack that won grant funding. Implemented a quadratic program with sub-meter trajectory tracking. Built an advection–diffusion modeling simulation in FiPy and an inverse Physics-Informed Neural Network (PINN) to infer diffusivity, flow field, and source parameters from a sparse set of samples. Implemented a novel residual map hotspot tracking map from the PINN to drive an online learning policy and generate optimal UUV trajectories. 
         </p>
         <p>
           <strong>Technologies:</strong> Convex Optimization • BlueROV2 • ArduSub • Fluid Dynamics • FiPy PDE Solver • Gazebo Simulation • CVXPY
@@ -229,15 +222,15 @@ From developing decentralized drone swarms using Laplacian control theory to bui
         <img src="assets/images/qp_path_on_residual.png" alt="Hotsopt Tracking PINN" loading="lazy" style="width: 100%; border-radius: 8px; margin-bottom: 1rem;">
       </div>
       <div class="project">
-        <h2>Quadruped Robot Navigation | Advanced State Estimation in GPS-Denied Environments</h2>
+        <h2>Quadruped Robot Navigation | State Estimation in GPS-Denied Environments</h2>
         <p>
-          <strong>Challenge:</strong> Enable precise autonomous navigation for the Unitree Go2 quadruped robot without access to GPS, magnetometer, or visual odometry - simulating real-world scenarios in underground or indoor environments.
+          <strong>Challenge:</strong> Enable autonomous navigation for the Unitree Go2 quadruped robot without access to GPS or visual odometry. 
         </p>
         <p>
-          <strong>Solution:</strong> Architected a robust state estimation pipeline using Kalman filtering to fuse IMU sensor data for accurate roll, pitch, and yaw estimation. Overcame the critical challenge of yaw drift in GPS-denied environments by developing an innovative constant-yaw assumption algorithm validated through extensive odometry analysis. Implemented a Model Predictive Controller based on unicycle dynamics, achieving trajectory tracking on complex paths including figure-eight patterns.
+          <strong>Solution:</strong> Developed a state estimator using an EKF to fuse IMU and magnetometer data for roll, pitch, and yaw estimation. Implemented a Model Predictive Controller based on unicycle dynamics, achieving trajectory tracking on complex paths including figure-eight patterns.
         </p>
         <p>
-          <strong>Impact:</strong> Demonstrated that sophisticated navigation is achievable even with limited sensor suites, providing a cost-effective solution for indoor robotics applications. The system successfully executed complex trajectories. 
+          <strong>Impact:</strong> Demonstrated that navigation is achievable even with limited sensor suites, providing a cost-effective solution for indoor robotics applications. The system successfully executed complex trajectories. 
         </p>
         <p>
           <strong>Technologies:</strong> Kalman Filtering • Sensor Fusion • Model Predictive Control • ROS2 • Python • C++ 
@@ -252,13 +245,13 @@ From developing decentralized drone swarms using Laplacian control theory to bui
       <div class="project">
         <h2>Intelligent Robotic Manipulation | Custom Computer Vision Pipeline</h2>
         <p>
-          <strong>Challenge:</strong> Develop a robust manipulation system capable of identifying, classifying, and precisely grasping objects of varying shapes using only 3D vision data via a Realsense depth camera.
+          <strong>Challenge:</strong> Develop a system capable of identifying, classifying, and grasping objects of varying shapes using only a Realsense depth camera.
         </p>
         <p>
-          <strong>Solution:</strong> Engineered an end-to-end computer vision and manipulation pipeline processing point clouds. Implemented advanced clustering algorithms for object segmentation, custom corner detection for precise orientation estimation, and developed a novel grasp point calculation algorithm achieving 85% success rate in trials. Created shape classification system using geometric moment analysis for real-time object identification.
+          <strong>Solution:</strong> Engineered an end-to-end computer vision and manipulation pipeline processing point clouds. Implemented clustering algorithms for object segmentation, custom corner detection for precise orientation estimation, and developed my own algorithm achieving 85% success rate in trials. Created shape classification system using geometric moment analysis for real-time object identification.
         </p>
         <p>
-          <strong>Impact:</strong> Delivered a production-ready system, the modular architecture enables easy adaptation to new object types.
+          <strong>Impact:</strong> Delivered a production-ready system, the architecture enables easy adaptation to new object types.
         </p>
         <p>
           <strong>Technologies:</strong> Point Cloud Library (PCL) • MoveIt • Computer Vision • 3D Perception • ROS • Motion Planning 
@@ -273,7 +266,7 @@ From developing decentralized drone swarms using Laplacian control theory to bui
       </div>
 
       <div class="project">
-        <h2>Advanced Control Theory Implementation | Real-Time Optimization</h2>
+        <h2>Control Theory Implementation | Real-Time Optimization</h2>
         <p>
           <strong>Challenge:</strong> Implement sophisticated control algorithms for inherently unstable systems, demonstrating mastery of modern control theory.
         </p>
@@ -290,29 +283,27 @@ From developing decentralized drone swarms using Laplacian control theory to bui
       </div>
 
       <div class="project">
-        <h2>Advanced Fabrication & Rapid Prototyping | End-to-End Product Development</h2>
+        <h2>Fabrication & Prototyping | End-to-End Product Development</h2>
         <p>
-          <strong>Core Capability:</strong> Hands-on engineering expertise from CAD design through precision fabrication.
+          <strong>Core Capability:</strong> Hands-on engineering expertise from CAD design through fabrication.
         </p>
         <p>
-          <strong>Impact:</strong> The ability to physically build and modify robotic platforms provides crucial insights into mechanical constraints, material properties, and real-world failure modes - knowledge that directly informs better software design and control algorithms.
+          <strong>Impact:</strong> The ability to physically build and modify robotic platforms provides insights into mechanical constraints, material properties, and real-world failures. 
         </p>
 
-        <h4>Structural Safety Systems | Track-Grade Engineering</h4>
+        <h4>Structural Safety Systems</h4>
         <p>
-          Designed and fabricated competition-spec safety equipment meeting track standards. Engineered frame-mounted towing system with load distribution, ensuring structural integrity under loads. 
+          Designed and fabricated safety equipment meeting track standards. Engineered frame-mounted crash bar with load distribution, ensuring structural integrity under loads. 
         </p>
         <img src="assets/images/bashbar.jpeg" alt="Bash Bar" loading="lazy" style="width: 100%; border-radius: 8px;">
-
-        <h4>Safety-Critical Mounting Systems | Competition Compliance</h4>
+        <h4>Safety-Critical Mounting Systems</h4>
         <p>
-          Engineered custom mounting solutions exceeding motorsport safety regulations. Designed and fabricated brackets, integrated with roll cage architecture for harness mounting. Achieved certification for competition at a local raceway.
+          Engineered mounting points to meet safety regulations. Designed and fabricated brackets, integrated with roll cage for harness mounting. 
         </p>
         <img src="assets/images/z3-seats.jpeg" alt="Seat Mounts" loading="lazy" style="width: 100%; border-radius: 8px;">
-
-        <h4>Complex Geometry Fabrication | Precision Flow Dynamics</h4>
+        <h4>Fabrication of Exhaust Flow</h4>
         <p>
-          Engineered custom exhaust system requiring precision TIG welds on curves. Demonstrated ability of thin-wall welding techniques on heat-sensitive materials.
+          Fabricated a custom exhaust and TIG welded everything in my parents' garage. Demonstrated ability of thin-wall welding techniques on semi-heat-sensitive materials.
         </p>
         <div class="image-row">
           <img src="assets/images/shadowexhaust-1.jpeg" alt="Exhaust 1" loading="lazy" style="border-radius: 8px;">
@@ -326,13 +317,13 @@ From developing decentralized drone swarms using Laplacian control theory to bui
     <div class="container">
       <h2>Contact</h2>
       <p>
-        I bring a unique blend of theoretical expertise and hands-on engineering capability that transforms ambitious robotics concepts into deployed solutions.
+        I bring a blend of theoretical expertise and hands-on engineering capability that transforms robotics concepts into solutions.
       </p>
       <p>
         Whether you're developing next-generation autonomous systems, scaling multi-agent coordination, or pushing the boundaries of robot perception and control, I would love to deliver the technical depth and practical experience to accelerate and be apart of your mission.
       </p>
       <p>
-        <strong>Connect with me:</strong> <a href="https://www.linkedin.com/in/ethan-d-souza-b05065213/" target="_blank">LinkedIn</a> | Open to opportunities in autonomous systems, aerial robotics, and cutting-edge R&D.
+        <strong>Connect with me:</strong> <a href="https://www.linkedin.com/in/ethan-d-souza-b05065213/" target="_blank">LinkedIn</a> | Open to opportunities in autonomous systems, aerial robotics, and R&D.
       </p>
     </div>
   </section>
