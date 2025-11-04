@@ -8,7 +8,6 @@
 // ===================================================================
 
 document.addEventListener('DOMContentLoaded', function() {
-    initializeLoader();
     initializeNavigation();
     initializeMobileMenu();
     initializeScrollAnimations();
